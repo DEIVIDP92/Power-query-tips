@@ -2,6 +2,11 @@ in the below query steps we are referrencing to a source table and grouping as a
 referrencing to value.type to grab that prior table instead of hardcoding the value types manually.
 video reference 37': https://www.youtube.com/live/MUUykrXOQnw?feature=shared
 
-
+option1
 = Table. Group(Source, {"Product", "Category"},
 {{Details", each_, Value.Type( Source ) }})
+
+option2
+in this example (which is different), we drill-down by the column details and 
+apply a table combine, this way we create a robust logic to avoid errors.
+Table.Combine( #"Grouped Rows"[Details] )
