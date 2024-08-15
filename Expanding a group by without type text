@@ -1,0 +1,5 @@
+in the below query steps we are referrencing to a source table and grouping as an example: Product amd Category and then,
+referrencing to value.type to grab that prior table instead of hardcoding the value types manually.
+
+= Table. Group(Source, {"Product", "Category"},
+{{Details", each_, Value.Type( Source ) }})
