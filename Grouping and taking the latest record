@@ -1,4 +1,0 @@
-Table.Group(#"Renamed columns", {"CustomerId"}, {{"All", each Table.Max(_, "IndexLevel")}})
-
-
-https://youtu.be/QaodJFeX49k?si=269vOELtsUTlaCAA
